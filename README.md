@@ -2,29 +2,29 @@
 
 How to hack any Acer C7(4)20 Chromebook that has been locked remotely by admin and how easy it is to take control over a chromebook
 
-![Screenshot](previews/c720.jpg)
+![c720](https://user-images.githubusercontent.com/26827453/174461655-7e6872f6-2fa1-4cfa-a027-40bb8e1e20e0.jpg)
 
 Whole process from the first time we start this device until device will enter enrollment and there is nothing we can do more then see the process happening and then its out of our control (if we are not the admin)
 
-![Screenshot](previews/1.jpg)
-![Screenshot](previews/2.jpg)
-![Screenshot](previews/3.jpg)
-![Screenshot](previews/4.jpg)
-![Screenshot](previews/5.jpg)
-![Screenshot](previews/6.jpg)
-![Screenshot](previews/7.jpg)
+![1](https://user-images.githubusercontent.com/26827453/174461657-5f8cea41-07d7-436d-8fd1-ae54fa64b41f.jpg)
+![2](https://user-images.githubusercontent.com/26827453/174461659-afe20964-e264-48b8-84f5-b31832500eda.jpg)
+![3](https://user-images.githubusercontent.com/26827453/174461660-08ed4809-1f21-4f07-8445-e27acd2446da.jpg)
+![4](https://user-images.githubusercontent.com/26827453/174461661-fcf2018c-67bc-42d3-ab57-7730e485af7a.jpg)
+![5](https://user-images.githubusercontent.com/26827453/174461662-b9a6f5c1-6220-4669-96c7-101573a9f850.jpg)
+![6](https://user-images.githubusercontent.com/26827453/174461665-cb379918-9a6e-43b6-97e9-2194951983b9.jpg)
+![7](https://user-images.githubusercontent.com/26827453/174461666-ab14f741-3e95-4503-b9a3-1015ffc5edeb.jpg)
+
 
 So, are we pwned? Of course not nothing is impossible!! Now let us hack this device
 
 * First of all, you must unscrew all screws and then when you opened the bottom of the laptop you must now remove the write-protection screw. Also, remove the battery:
-
-![Screenshot](previews/wp.jpg)
-![Screenshot](previews/wp2.jpg)
+* 
+![wp](https://user-images.githubusercontent.com/26827453/174461667-ba02f146-f8a9-4ea5-8688-b4d8a3164b7d.jpg)
+![wp2](https://user-images.githubusercontent.com/26827453/174461668-998b04d4-6b11-40f2-a0f4-99fd21e2c0a7.jpg)
 
 * Now, with your bios/eeprom programmer you can read and overwrite the current bios. The bíos chip is the below one: 
 
-![Screenshot](previews/clip.jpg)
-
+![clip](https://user-images.githubusercontent.com/26827453/174461669-2513ea3a-3778-495b-8a86-aebf9fa52126.jpg)
 
 Once clip is conncted and your programmer found the clip, backup the current data on the chip:
 
@@ -188,9 +188,6 @@ mkdir -p "${PASSWD_FILE%/*}"
 chmod 600 "${PASSWD_FILE}"
 echo "chronos:${pass}" > "${PASSWD_FILE}
 ```
-
-
-
 
 ### VPD:
 
