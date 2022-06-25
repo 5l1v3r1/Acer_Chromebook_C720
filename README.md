@@ -193,14 +193,16 @@ echo "chronos:${pass}" > "${PASSWD_FILE}
 
 This is funny. The remote lock is locking devices via the serial number and as root we can list the currect info about device via vpd -l and we are also allowed to write new serial number without any hacking needed, the screw must be removed (see the top of post, WP-Screw)
 
+```sh
+vpd -i RO_VPD -s serial_number=xxxxxxx
+```
 
-* vpd -i RO_VPD -s serial_number=xxxxxxx
-* hit enter
-* verify that our new serial has been written:
+* Hit enter, verify that our new serial has been written:
+```sh
 * vpd -l
+```
 
 Read more about VPD and how it works on url: https://chromium.googlesource.com/chromiumos/platform/vpd/
 
-Touche! :) 
-
+Enjoy!
 
